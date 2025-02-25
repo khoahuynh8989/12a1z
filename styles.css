@@ -1,0 +1,192 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #f8f9fa, #e9ecef);
+    color: #333;
+}
+
+header {
+    background: #343a40;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+nav {
+    background: #495057;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+nav ul li a {
+    color: #f8f9fa;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+nav ul li a:hover {
+    color: #ffc107;
+}
+section {
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+section p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    background: #343a40;
+    color: #f8f9fa;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+@media screen and (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    section {
+        padding: 20px;
+    }
+}  
+.member-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Bố cục linh hoạt */
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Định dạng từng khối thành viên */
+.member {
+  background: linear-gradient(135deg, #f6f6f6, #e9e9e9);
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.member:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+/* Ảnh đại diện thành viên */
+.member img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.member:hover img {
+  transform: scale(1.1);
+}
+
+/* Tên thành viên */
+.member h3 {
+  font-size: 1.2em;
+  margin-top: 10px;
+  color: #333;
+.members img {
+    width: 150px; /* Điều chỉnh kích thước ảnh cho phù hợp */
+    height: 150px; /* Điều chỉnh kích thước ảnh */
+    border-radius: 50%; /* Làm ảnh thành hình tròn */
+    margin: 10px; /* Tạo khoảng cách giữa các ảnh */
+    object-fit: cover; /* Đảm bảo ảnh được cắt đẹp */
+}/* Hiệu ứng chữ tiêu đề */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+header h1 {
+  font-size: 2.5em;
+  color: #2c3e50;
+  text-align: center;
+  margin-top: 20px;
+  animation: fadeIn 1s ease-out;
+}
+
+/* Hiệu ứng chuyển động nhẹ cho đoạn giới thiệu */
+header p {
+  text-align: center;
+  font-size: 1.2em;
+  color: #555;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeIn 1.2s ease-out forwards;
+  animation-delay: 0.3s;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  margin: 20px auto;
+  font-size: 1.2em;
+  color: white;
+  background: linear-gradient(135deg, #3498db, #2ecc71);
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+  .activities {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.activity img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.activity img:hover {
+    transform: scale(1.05);
+}
+ 
+
+
+
